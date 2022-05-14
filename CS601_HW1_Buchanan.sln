@@ -21,6 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CS601_HW1_Buchanan", ".", "
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "51453"
+		SlnRelativePath = "..\CS601_HW1_Buchanan\"
 	EndProjectSection
 EndProject
 Global
