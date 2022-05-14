@@ -142,13 +142,14 @@ h1,h2,h3,h4,h5,h6{
 .projects .header .img img{
     height:200px;
     width:auto;
-    border-radius: 50%;
-   
-    
+    max-width:95%;
+    border-radius: 50%;  
 }
-.projects .text{
-    font-size:22px
-    
+.noBorder{
+    border-radius:0px !important;
+}
+.projects .text {
+    font-size: 22px
 }
 
 
