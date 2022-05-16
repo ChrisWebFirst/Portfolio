@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="Assets/CSS/SiteStyle.css">
 </head>
 <body>
-    <header> <!--header-->
+    <header>
+        <!--header-->
+        <!--Going to style this up to display on right side of screen on > 768 and centered on phone-->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -16,16 +18,14 @@
             </ul>
         </nav>
     </header><!--end header-->
-    <style>
-
-        
-    </style>
     <div class="about">
-        <section>
+        <div>
             <h1>About</h1>
             <p>A little bit about me</p>
             <section>
-                <h2>Family and Friends</h2><br />
+                <!--family-->
+                <!--Going to display the images beside the text, set border radius 50% on images,  stack on small device-->
+                <h2>Family</h2><br />
                 <div class="row">
                     <div class="column1">
                         <img alt="Family at the Blue Ridge Mountains in GA" src="assets/Images/BlueRidge.JPG">
@@ -38,8 +38,9 @@
                         </p>
                     </div>
                 </div>
-            </section>
+            </section><!--end family-->
             <section>
+                <!--Career-->
                 <h2>Career</h2><br />
                 <div class="row">
                     <div class="column1">
@@ -60,11 +61,13 @@
                         You can listen to me tell about my background here
                     </div>
                 </div>
-            </section>           
-        </section>
-
-        <section class="paddTop100">
+            </section><!-- end Career-->
+        </div>
+        <!--Going to show my work history using table-->
+        <!--will style table to look good.  I will also make it responsive on small screen if need be-->
+        <div class="paddTop100">
             <section>
+                <!--Experience-->
                 <h2>Experience</h2>
                 <p>A little bit about my work history</p>
                 <table>
@@ -125,8 +128,8 @@
                         </tr>
                     </tbody>
                 </table>
-            </section>
-        </section>
+            </section><!--End Experience-->
+        </div>
     </div>
 
 </body>
