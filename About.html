@@ -1,52 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chris Buchanan's Portfolio</title>
-    <link rel="stylesheet" href="Assets/CSS/SiteStyle.css">
-</head>
+<head id="Head"></head>
 <body>
-    <header>
-        <!--header-->
-        <!--Going to style this up to display on right side of screen on > 768 and centered on phone-->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header><!--end header-->
-    <div class="about">
-        <div>
+    <header id="Header"></header>
+    <main class="about">
+        <section>
             <h1>About</h1>
             <p>A little bit about me</p>
-            <section>
+            <article>
                 <!--family-->
                 <!--Going to display the images beside the text, set border radius 50% on images,  stack on small device-->
                 <h2>Family</h2><br />
-                <div class="row">
-                    <div class="column1">
+                <section class="row">
+                    <figure class="column1">
                         <img alt="Family at the Blue Ridge Mountains in GA" src="assets/Images/BlueRidge.JPG">
-                    </div>
-                    <div class="column2">
+                    </figure>
+                    <section class="column2">
                         <p>
                             <em>18 years ago</em> I married an amazing woman Aimee. Together we have two children (Ethan & Levi).
                             Family is a big deal to me. A typical week for us means work and trying to get time with our boys.  One is 13 and the other is 10.  It seems like time just gets away from us.
-                            Being a father and a husband are the most challenging and rewarding things of my life.  When we have time we love spending it with a few family on trips.
+                            Being a father and a husband are the most challenging and rewarding things of my life.  When we have time, we love spending it with other close family friends.
                         </p>
-                    </div>
-                </div>
-            </section><!--end family-->
-            <section>
+                    </section>
+                </section>
+            </article><!--end family-->
+            <article>
                 <!--Career-->
                 <h2>Career</h2><br />
-                <div class="row">
-                    <div class="column1">
+                <section class="row">
+                    <figure class="column1">
                         <img alt="Family at the Blue Ridge Mountains in GA" src="assets/Images/about.jpg">
-                    </div>
-                    <div class="column2">
+                    </figure>
+                    <section class="column2">
                         <p>
                             I work as a software developer based out of <a href="https://monroela.us" target="_blank">Monroe, LA</a>.  I started programming about 5 years ago.  At the time, I was a supervisor over a distribution center that was moving into lean manufacturing.  I couldn't find the right software for our company so I wrote a program.
                             It was an asp.net project with server side C# and Html on the client side.  During this project, I fell in love with programming.  My company hired me as a full time programmer and have since written numerous programs and web applications.
@@ -59,14 +44,14 @@
                             <li>Sql Server</li>
                         </ul>
                         You can listen to me tell about my background here
-                    </div>
-                </div>
-            </section><!-- end Career-->
-        </div>
+                    </section>
+                </section>
+            </article><!-- end Career-->
+        </section>
         <!--Going to show my work history using table-->
         <!--will style table to look good.  I will also make it responsive on small screen if need be-->
-        <div class="paddTop100">
-            <section>
+        <section class="paddTop100">
+            <article>
                 <!--Experience-->
                 <h2>Experience</h2>
                 <p>A little bit about my work history</p>
@@ -128,9 +113,18 @@
                         </tr>
                     </tbody>
                 </table>
-            </section><!--End Experience-->
-        </div>
-    </div>
-
+            </article><!--End Experience-->
+        </section>
+    </main>
+    <script src="jquery-min-js.js"></script>
+    <!--Use for all common scripts-->
+    <script src="SiteScript.js"></script>
+    <!--Use for page only scripts-->
+    <script>
+    $(document).ready(function () {
+        LoadHeader();
+        LoadHead();
+    });
+    </script>
 </body>
 </html>

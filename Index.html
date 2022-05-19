@@ -1,29 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chris Buchanan's Portfolio</title>
-    <link rel="stylesheet" href="Assets/CSS/SiteStyle.css">
+<head id="Head">
 </head>
-<body>   
-    <header><!--header-->
-        <nav>
-            <ul >           
-                <li><a href="index.html">Home</a></li>            
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>             
-            </ul>
-        </nav>        
-    </header><!--end header-->   
-    <style>
-     
-    </style>
-    <section class="home">
-        <div class="row">
-            <section class="column">               
+<body>
+    <header id="Header"></header>
+    <main class="home">
+        <article class="row">
+            <figure class="column">
                 <img alt="Photo of Chris Buchanan" src="assets/Images/Profile.jpg">
-            </section>
+            </figure>
             <section class="column">
                 <h2>Hi There, <br>I am Chris Buchanan</h2>
                 <article class="addText">
@@ -33,10 +18,9 @@
                 <span>Creative</span>
                 <span>Innovative</span>
                 <span>Insightful</span>
-            </section>           
-        </div>      
-       
-        <section class="paddTop100">
+            </section>
+        </article>
+        <article class="paddTop100">
             <section>
                 <h2>Hear It From Me</h2>
                 <p>A little bit about my story</p>
@@ -46,7 +30,19 @@
                     </video>
                 </section>
             </section>
-        </section>
-    </section>
-    </body>
+        </article>
+    </main>
+    <script src="jquery-min-js.js"></script>
+    <!--Use for all common scripts-->
+    <script src="SiteScript.js"></script>
+    <!--Use for page only scripts-->
+    <script>
+        $(document).ready(function () {
+            LoadHeader();
+            LoadHead();
+        });
+    </script>
+</body>
+
 </html>
+
