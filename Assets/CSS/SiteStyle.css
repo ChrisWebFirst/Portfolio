@@ -1,5 +1,5 @@
 
-/* header */
+/*-------------------------- header */
 header {
     display: block;
     width: 95%;
@@ -8,46 +8,109 @@ header {
 }
     
 header nav{
+    display:block;
     width:100% !important;
 
 }
-header ul {
+header nav ul {
     width: 300px;
     text-align: center;
     margin: 0px;
     float:right;
 }
-header ul:hover{
+header nav ul:hover{
     cursor: pointer;
   
 }
-header ul li {    
+header nav ul li {    
     width:80px; 
     display:inline-block;  
     text-align:center;
     list-style-type: none;
 }
-header ul li a{
+header nav ul li a{
     color:#000046;     
     text-decoration: none;
     font-size:18px;
     font-weight:400;
 }
-header ul li a:hover {    
-    color:#64e687;     
-}
-@media screen and (max-width: 600px) {
-
-    header{
-        width:100%;
-        padding:5px;
-        margin:0px;
+    header nav ul li a:hover {
+        color: gray;
     }
-        header ul {
-                      float: revert;
-        }
+    /*----------------Header Image fa fa-bars*/
+.fabars {
+    height: 40px;
+    width: auto;
+    display:none;  
+    float:right;
+    margin-top:10px;
 }
-    /**------------------------Site*/
+/*----------------Header mobile menu   */
+#MobileMenu {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    width: 0px;
+    visibility: hidden;
+    transition: width 0.3s;
+    height: 500px;
+    border-right: 2px solid lightgray;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+    #MobileMenu .closeSection {
+        text-align: right;
+        height: 40px;
+        display: block;
+    }
+
+    #MobileMenu .close {
+        float: right;
+        font-size: 40px;
+        color: #000046;
+        margin: 15px;
+    }
+
+    #MobileMenu a {
+        text-decoration: none;
+        color: #000046;
+    }
+    #MobileMenu a:hover {        
+        color: gray;
+    }
+    #MobileMenu .close {
+        color: gray;
+    }
+
+    #MobileMenu ul {
+        text-align: left;
+        width:100%;       
+        display: block;
+    }
+
+        #MobileMenu ul li {
+            text-align: left;
+            display: block;
+            padding: 10px;
+            font-size: 40px;
+            width: 90%;
+            border-bottom: 1px solid lightgray;
+        }
+
+@media screen and (max-width: 600px) {
+    header nav{
+        display:none;       
+    }
+    header{
+        display:block;
+    }
+    .fabars{
+        display:block;
+    }
+        
+}
+/*------------------------------Site*/
     h1, h2, h3, h4, h5, h6 {
         color: #000046;
         text-transform: uppercase;
@@ -214,7 +277,7 @@ header ul li a:hover {
                 }
     }
 
-    /**---------------About Page*/
+/**--------------------About Page*/
 
     .about {
         width: 70%;
