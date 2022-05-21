@@ -1,9 +1,35 @@
 
+
+/*------------------------------Site*/
+* {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #000046;
+    text-transform: uppercase;
+    font-family: Century Gothic, sans-serif;
+}
+
+li {
+    font-family: Century Gothic, sans-serif;
+
+}
+
+h1 {
+    font-size: 40px;
+    width: 100%;
+}
+
+h2 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid lightgray;
+}
 /*-------------------------- header */
 header {
     display: block;
     width: 95%;
     height: 45px;
+    padding-top:10px
 
 }
     
@@ -32,7 +58,8 @@ header nav ul li a{
     color:#000046;     
     text-decoration: none;
     font-size:18px;
-    font-weight:400;
+    font-weight:bold;
+
 }
     header nav ul li a:hover {
         color: gray;
@@ -110,21 +137,7 @@ header nav ul li a{
     }
         
 }
-/*------------------------------Site*/
-    h1, h2, h3, h4, h5, h6 {
-        color: #000046;
-        text-transform: uppercase;
-    }
 
-    h1 {
-        font-size: 40px;
-        width: 100%;
-    }
-
-    h2 {
-        padding-bottom: 5px;
-        border-bottom: 2px solid lightgray;
-    }
     /**---------------------Home Page*/
     .HomeVideo {
         text-align: center
