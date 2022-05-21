@@ -265,16 +265,24 @@ header nav ul li a{
         .home {
             margin: 0px;
             padding: 0px;
+            width:100%
         }
 
             .home .row {
-                flex-direction: column;
+                flex-direction: column;                
+                width: 100%;
+                margin:0px;
+                margin-right:0px;
             }
 
                 .home .row .column img {
                     height: auto;
                     width: 90%;
                 }
+                .home .row .column h2 {
+                   width:100%
+                }
+
     }
 
 /**--------------------About Page*/
