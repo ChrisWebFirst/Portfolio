@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chris Buchanan's Portfolio</title>
+    <link rel="stylesheet" href="assets/css/sitestyle.css">
+    <script src="assets/js/sitescript.js" defer></script>
+    <script src="assets/js/contact.js" defer></script>
+</head>
+<body>
+    <!--keeping one menu for all pages-->
+    <header id="Menu"></header>
+    <script src="assets/js/menu.js"></script>
+    <main class="MainContact">
+        <section class="mainRow">
+            <h1>Contact</h1>
+            <p>Contact Me</p>
+        </section>         
+        <section class="Contact">         
+                <div class="box">                   
+                        <div id="face">
+                            <h3>Contact Card</h3>
+                            <!--Built API for course.  asp.net core-->
+                            <form id="form" action="https://main-api.azurewebsites.net/api/bu/contact" method="post">
+                                <div class="row">
+                                    <div class="column">
+                                        <label class="main" for="firstName">First name  *</label>
+                                        <input type="text" class="form-input" pattern="[A-Za-z]{2,}" min="" title="At least 2 alpha characters" name="firstName" id="firstName" placeholder="First name" required>
+                                    </div>
+                                    <div class="column">
+                                        <label class="main" for="lastName">Last name *</label>
+                                        <input type="text" class="form-input" pattern="[A-Za-z]{2,}" title="At least 2 alpha characters" name="lastName" id="lastName" placeholder="Last name" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        <label class="main" for="phone">Phone * <span>10 digits (number with area code)</span></label>
+                                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" title="All numbers with areacode" class="form-input" pattern="[0-9]{10}" required>
+                                    </div>
+                                    <div class="column">
+                                        <label class="main" for="email">Email *</label>
+                                        <input type="email" class="form-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" id="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        <label class="main" for="company">Company</label>
+                                        <input type="text" class="form-input" title="At least 2 alpha characters" name="company" id="company" placeholder="Company Name" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column full">
+                                        <label class="main" for="note">Note *</label>
+                                        <textarea placeholder="Note" id="note" title="Only alpha characters" name="note"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        <button class="submitBtn" id="submitBtn" type="submit">Submit Contact</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div id="back">
+                            <h3>Thank you</h3>
+                            <p>I will contact you shortly</p>
+                        </div>                    
+                </div>      
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chris Buchanan's Portfolio</title>
+    <link rel="stylesheet" href="assets/css/sitestyle.css">
+    <script src="assets/js/sitescript.js" defer></script>
+    <script src="assets/js/resume.js" defer></script>
+</head>
+<body>
+    <!--keeping one menu for all pages-->
+    <header id="Menu"></header>
+    <script src="assets/js/menu.js"></script>
+    <main class="MainResume">
+        <section class="MainRow">
+            <h1>Resume <button id="resumePrint">Print</button></h1>
+            <p>My work history</p>
+        </section>
+        <article>
+            <!--Career-->
+            <h2>Career</h2><br />
+            <section class="row">
+                <figure class="column1">
+                    <img alt="Family at the Blue Ridge Mountains in GA" src="assets/Images/about.jpg">
+                </figure>
+                <section class="column2">
+                    <p>
+                        I work as a software developer based out of <a href="https://monroela.us" target="_blank">Monroe, LA</a>.  I started programming about 5 years ago.  At the time, I was a supervisor over a distribution center that was moving into lean manufacturing.  I couldn't find the right software for our company so I wrote a program.
+                        It was an asp.net project with server side C# and Html on the client side.  During this project, I fell in love with programming.  My company hired me as a full time programmer and have since written numerous programs and web applications.
+                        I have developed a pretty wide range of programming knowledge and skills.  The strongest of which includes the following:
+                    </p>
+                    <ul>
+                        <li>C#</li>
+                        <li>Html5</li>
+                        <li>Javascript/ JQuery</li>
+                        <li>Sql Server</li>
+                    </ul>
+                </section>
+            </section>
+        </article><!-- end Career-->
+        <!--Going to show my work history using table-->
+        <!--will style table to look good.  I will also make it responsive on small screen if need be-->
+        <article class="paddTop100">           
+                <!--Experience-->
+                <h2>Experience</h2>
+                <p>A little bit about my work history</p>
+                <table id="WorkExperience">
+                    <thead>
+                        <tr>
+                            <th>Start</th>
+                            <th>End</th>
+                            <th>Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>                        
+                    </tbody>
+                </table>
+            <!--End Experience-->
+        </article>
+        <article class="paddTop100">
+            <h2>Languages</h2>
+            <p>Below is all of languages & frameworks I have expirence with</p>                  
+                <div id="langSlider" class="lang-slider">
+                    <div>
+                        <a ><img id="c" class="logoimg" src="assets/images/languages/c.png"></a>
+                    </div>
+
+                    <div>
+                        <a ><img id="x" class="logoimg" src="assets/images/languages/x.png"></a>
+                    </div>
+                    <div>
+                        <a><img  id="vb" class="logoimg" src="assets/images/languages/vb.png"></a>
+                    </div>
+                    <div>
+                        <a ><img id="javascript" class="logoimg" src="assets/images/languages/javascript.png"></a>
+                    </div>
+                    <div>
+                        <a><img  id="jquery" class="logoimg" src="assets/images/languages/jquery.png"></a>
+                    </div>
+                    <div>
+                        <a ><img id="bootstrap" class="logoimg" src="assets/images/languages/bootstrap.png"></a>
+                    </div>
+                    <div>
+                        <a ><img id="css" class="logoimg" src="assets/images/languages/css.png"></a>
+                    </div>
+                    <div>
+                        <a ><img id="html" class="logoimg" src="assets/images/languages/html.png"></a>
+                    </div>
+                    <div>
+                        <a ><img id="sqlserver" class="logoimg" src="assets/images/languages/sqlserver.png"></a>
+                    </div>
+                    <div>
+                        <a ><img id="mysql" class="logoimg" src="assets/images/languages/mysql.png"></a>
+                    </div>
+                    <div>
+                        <a ><img id="aws" class="logoimg" src="assets/images/languages/aws.png"></a>
+                    </div>
+                    <div>
+                        <a ><img id="azure" class="logoimg" src="assets/images/languages/azure.png"></a>
+                    </div>
+                    <div>
+                        <a><img  id="linux" class="logoimg" src="assets/images/languages/linux.png"></a>
+                    </div>
+                    <div>
+                        <a ><img id="windows" class="logoimg" src="assets/images/languages/windows.png"></a>
+                    </div>                    
+                </div>
+            <div id="languageDiv" style="background-color:whitesmoke;border:2px solid lightgray;margin-bottom:25px;display:none;">
+                <h3 id="languageHeader" style="text-align:center"></h3>
+                <p id="languageDescription" style="padding:25px"> </p>
+            </div>
+        </article>
+
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

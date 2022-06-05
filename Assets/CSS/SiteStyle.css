@@ -1,6 +1,30 @@
 
 
 /*------------------------------Site*/
+
+body {   
+    display: flex;
+    flex-direction: column;
+    padding:0px;
+    margin:0px;
+}
+    body main {
+        flex: 1 0 auto;
+        min-height: calc(100vh - 105px);
+    }
+
+header {
+    display: block;
+    width: 95%;
+    height: 45px;
+    padding-top: 10px
+}
+footer {
+    border-top: 2px solid rgba(17,17,67,.2);
+    height: 60px;
+    background-color: whitesmoke;
+    color: #000046;
+}
 * {
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
@@ -25,13 +49,7 @@ h2 {
     border-bottom: 2px solid lightgray;
 }
 /*-------------------------- header */
-header {
-    display: block;
-    width: 95%;
-    height: 45px;
-    padding-top:10px
 
-}
     
 header nav{
     display:block;
@@ -39,7 +57,7 @@ header nav{
 
 }
 header nav ul {
-    width: 300px;
+    width: 800px;
     text-align: center;
     margin: 0px;
     float:right;
@@ -120,12 +138,12 @@ header nav ul li a{
             text-align: left;
             display: block;
             padding: 10px;
-            font-size: 40px;
+            font-size: 22px;
             width: 90%;
             border-bottom: 1px solid lightgray;
         }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 740px) {
     header nav{
         display:none;       
     }
@@ -137,6 +155,9 @@ header nav ul li a{
     }
         
 }
+
+
+/**----------------------------------footer*/
 
     /**---------------------Home Page*/
     .HomeVideo {
@@ -478,7 +499,225 @@ header nav ul li a{
     }
 
 
+/**---------------Contact Page*/
 
+.MainContact {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.Contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .Contact .box {
+        position:relative;
+        width: 600px; 
+        height:650px;
+    }
+    .Contact #face {
+        position: absolute;
+        width: 600px;
+        max-width: 100%;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0.3s linear,opacity 0.3s linear;
+    }
+
+    .Contact #back {
+        position: absolute;
+        text-align: center;
+        width: 600px;
+        max-width: 100%;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s linear,opacity 0.3s linear;
+    }
+    .Contact h3 {
+        font-size: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center
+    }
+
+    .Contact .row {
+        display: flex;
+    }
+
+    .Contact .column {
+        display: flex;
+        flex-direction: column;
+        flex: 50%;
+        padding: 15px;
+    }
+
+    .Contact .full {
+        flex: 100%;
+    }
+
+    .Contact .column label {
+        font-weight: bold;
+    }
+    .Contact .column label span {
+        font-size:10px;
+    }
+    .Contact .column input {
+        height: 35px;
+        border: 1px solid lightgray;
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .Contact .column textarea {
+        height: 35px;
+        border: 1px solid lightgray;
+        width: 100%;
+        border-radius: 6px;
+        height: 150px;
+    }
+
+@media only screen and (max-width: 620px) {
+    .MainContact {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Contact .box {
+        width: 90%;  
+        height:850px
+    }
+
+    .Contact .column {
+        flex: 100%;
+    }
+
+    .Contact .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/**---------------Resume Page*/
+
+.MainResume {
+    width: 70%;
+    margin-left: 15%;
+}
+
+    .MainResume .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .MainResume .row .column1 {
+            flex: 0 0 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .MainResume .row .column2 {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
+
+
+            .MainResume .row .column2 p {
+                font-size: 20px;
+                line-height: 1.5;
+                padding-top: 50px
+            }
+
+        .MainResume .row .column1 img {
+            height: auto;
+            width: 250px;
+            max-width: 90%;
+            border-radius: 50%;
+        }
+
+    .MainResume .paddTop100 {
+        padding-top: 100px;
+    }
+
+    .MainResume .MainRow button {
+        width: 150px;
+        float: right
+    }
+
+
+.lang-slider {
+    padding: 20px;
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+    .lang-slider:hover div {
+        animation-play-state: paused;
+    }
+
+    .lang-slider div {
+        display: flex;
+        position: relative;
+        animation: marquee 15s linear infinite;
+        justify-content: space-around;
+    }
+
+    .lang-slider .logoimg {
+        display: block;
+        min-width: 150px;
+        height: 150px;
+        margin: 0 10px;
+    }
+
+        .lang-slider .logoimg:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: linear-gradient(to right, white, rgba(white, 0) 80px, rgba(white, 0) calc(100% - 80px), white);
+        }
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-650%);
+    }
+}
+
+button {
+    background-color: rgba(17,17,67,.8);
+    color: white;
+    height: 35px;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 18px
+}
+
+    button:hover {
+        background-color: white;
+        color: rgba(17,17,67,.8);
+        border-color: rgba(17,17,67,.8);
+    }
 
 
 

@@ -1,128 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head id="Head"></head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chris Buchanan's Portfolio</title>
+    <link rel="stylesheet" href="assets/css/sitestyle.css">
+    <script src="assets/js/sitescript.js"></script>
+</head>
 <body>
-    <header id="Header"></header>
-    <main class="about">        
-            <h1>About</h1>
-            <p>A little bit about me</p>
-            <article>
-                <!--family-->
-                <!--Going to display the images beside the text, set border radius 50% on images,  stack on small device-->
-                <h2>Family</h2><br />
-                <section class="row">
-                    <figure class="column1">
-                        <img alt="Family at the Blue Ridge Mountains in GA" src="assets/Images/BlueRidge.JPG">
-                    </figure>
-                    <section class="column2">
-                        <p>
-                            <em>18 years ago</em> I married an amazing woman Aimee. Together we have two children (Ethan & Levi).
-                            Family is a big deal to me. A typical week for us means work and trying to get time with our boys.  One is 13 and the other is 10.  It seems like time just gets away from us.
-                            Being a father and a husband are the most challenging and rewarding things of my life.  When we have time, we love spending it with other close family friends.
-                        </p>
-                    </section>
+    <!--keeping one menu for all pages-->
+    <header id="Menu"></header>
+    <script src="assets/js/menu.js"></script>
+    <main class="about">
+        <h1>About</h1>
+        <p>A little bit about me</p>
+        <article>
+            <!--family-->
+            <!--Going to display the images beside the text, set border radius 50% on images,  stack on small device-->
+            <h2>Family</h2><br />
+            <section class="row">
+                <figure class="column1">
+                    <img alt="Family at the Blue Ridge Mountains in GA" src="assets/Images/BlueRidge.JPG">
+                </figure>
+                <section class="column2">
+                    <p>
+                        <em>18 years ago</em> I married an amazing woman Aimee. Together we have two children (Ethan & Levi).
+                        Family is a big deal to me. A typical week for us means work and trying to get time with our boys.  One is 13 and the other is 10.  It seems like time just gets away from us.
+                        Being a father and a husband are the most challenging and rewarding things of my life.  When we have time, we love spending it with other close family friends.
+                    </p>
                 </section>
-            </article><!--end family-->
-            <article>
-                <!--Career-->
-                <h2>Career</h2><br />
-                <section class="row">
-                    <figure class="column1">
-                        <img alt="Family at the Blue Ridge Mountains in GA" src="assets/Images/about.jpg">
-                    </figure>
-                    <section class="column2">
-                        <p>
-                            I work as a software developer based out of <a href="https://monroela.us" target="_blank">Monroe, LA</a>.  I started programming about 5 years ago.  At the time, I was a supervisor over a distribution center that was moving into lean manufacturing.  I couldn't find the right software for our company so I wrote a program.
-                            It was an asp.net project with server side C# and Html on the client side.  During this project, I fell in love with programming.  My company hired me as a full time programmer and have since written numerous programs and web applications.
-                            I have developed a pretty wide range of programming knowledge and skills.  The strongest of which includes the following:
-                        </p>
-                        <ul>
-                            <li>C#</li>
-                            <li>Html5</li>
-                            <li>Javascript/ JQuery</li>
-                            <li>Sql Server</li>
-                        </ul>                     
-                    </section>
-                </section>
-            </article><!-- end Career-->
-        
-        <!--Going to show my work history using table-->
-        <!--will style table to look good.  I will also make it responsive on small screen if need be-->
-        <section class="paddTop100">
-            <article>
-                <!--Experience-->
-                <h2>Experience</h2>
-                <p>A little bit about my work history</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Start</th>
-                            <th>End</th>
-                            <th>Title</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2018</td>
-                            <td>Current</td>
-                            <td>
-                                Software Developer
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <ul>
-                                    <li>Work with cross-functional teams to re-architect an outdated web app</li>
-                                    <li>Focus is on full stack development of website applications, Console <abbr title="Applications">Apps</abbr> and APIs</li>
-                                    <li>Emphasis on C#, sql server & html5</li>
-                                    <li>Created CICD pipelines from GitHub to Web <abbr title="Applications">Apps</abbr> In Azure</li>
-                                    <li>Continually work with management, company stakeholders and customers to deliver quality products to our end users</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2010</td>
-                            <td>2018</td>
-                            <td>
-                                Supervisor: Door Plant & Distribution Center
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <ul>
-                                    <li>Supervised the work flow of around 20-25 employees</li>
-                                    <li>Worked with IT to implement a new ERP system (Microsoft Dynamics AX)</li>
-                                    <li>Headed project that took the Distribution Center from paper to advanced warehousing</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2004</td>
-                            <td>2010</td>
-                            <td>
-                                Detective, West Monroe Police Department
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                Worked up from patrol to detective on a street crimes unit.
-                                I usually worked nights in some of the worst parts of town to help some pretty bad neighborhoods.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article><!--End Experience-->
-        </section>
+            </section>
+        </article><!--end family-->
     </main>
-    <script src="jquery-min-js.js"></script>
-    <!--Use for all common scripts-->
-    <script src="SiteScript.js"></script>
-    <!--Use for page only scripts-->
-    <script>
-    $(document).ready(function () {
-        LoadHeader();
-        LoadHead();
-    });
-    </script>
+    <footer>
+    </footer>
 </body>
 </html>

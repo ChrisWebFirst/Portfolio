@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head id="Head">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chris Buchanan's Portfolio</title>
+    <link rel="stylesheet" href="assets/css/sitestyle.css">
+    <script src="assets/js/sitescript.js"></script>
 </head>
 <body>
-    <header id="Header"></header>
+    <!--keeping one menu for all pages-->
+    <header id="Menu"></header>
+    <script src="assets/js/menu.js"></script>
     <main class="home">
         <article class="row">
             <figure class="column">
@@ -20,28 +27,8 @@
                 <span>Insightful</span>
             </section>
         </article>
-        <article class="paddTop100">
-            <section>
-                <h2>Hear It From Me</h2>
-                <p>A little bit about my story</p>
-                <section class="HomeVideo">
-                    <video controls>
-                        <source src="Assets/Videos/WIN_20220514_15_53_13_Pro_1.mp4" />
-                    </video>
-                </section>
-            </section>
-        </article>
     </main>
-    <script src="jquery-min-js.js"></script>
-    <!--Use for all common scripts-->
-    <script src="SiteScript.js"></script>
-    <!--Use for page only scripts-->
-    <script>
-        $(document).ready(function () {
-            LoadHeader();
-            LoadHead();
-        });
-    </script>
+    <footer></footer>    
 </body>
 
 </html>
