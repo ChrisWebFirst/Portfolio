@@ -22,6 +22,7 @@ fetch("https://main-api.azurewebsites.net/api/bu/getresume")
             let endCell;
             let titleCell;                    
             let text;
+            console.log(jsonData);
             //---------------add the start date
             startCell = firstRow.insertCell();
             text = document.createTextNode(rowData.startdate);
