@@ -322,8 +322,10 @@ header nav ul li a{
 /**--------------------About Page*/
 
     .about {
+        position:relative;
         width: 70%;
-        margin-left: 15%
+        margin-left: 15%;
+        margin-bottom: 50px;
     }
 
         .about .row {
