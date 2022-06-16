@@ -18,7 +18,7 @@ This site is written in modern html5, CSS and JavaScript. The only requirement f
 
 Navigation of this site is made easy by the links at the top of every page.  If you are on a mobile device press the icon at the top to view a list of all the pages.
 
-## Pages FEATURES
+## PAGE FEATURES
 
 Home Page
 - Current photo
