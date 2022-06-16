@@ -391,6 +391,58 @@ header nav ul li a{
         background-color: white;
     }
 
+
+#imagesContainer {
+    display: block;
+    margin: auto;
+    text-align: center;    
+}
+
+.imgBox {
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 250px;
+    height: 350px;
+    margin: 60px 0px 0px 60px;
+}
+
+.image img {
+    display: block;
+    width: 250px;
+    height: 350px;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    width: 250px;
+    height: 335px;
+    top: 16px;
+    left: 40px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000046;
+}
+
+.imgBox:hover .overlay {
+    opacity: .8;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 740px) {
+    .imgBox {
+        margin: 25px;
+    }
+}
     @media screen and (max-width: 1100px) {
         .about .row .column1 {
             flex: 0 0 150px;
