@@ -6,14 +6,51 @@
     <title>Chris Buchanan's Portfolio</title>
     <link rel="stylesheet" href="assets/css/sitestyle.css">
     <script src="assets/js/sitescript.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="assets/js/hobbies.js" type="module"></script>
 </head>
+
+
 <body>
     <!--keeping one menu for all pages-->
     <header id="Menu"></header>
     <script src="assets/js/menu.js"></script>
-    <main>
-        <h1>Hobbies</h1>
-        <p>This is my extras</p>
+    <main id="app" class="hobbiesMain">
+        <h1 class="header">
+            {{header}}
+        </h1>
+        <p class="headerDetail">{{ detail }}</p>
+       
+        <article >  
+            <section class="hobby"  v-for="hobby in hobby" :key="hobby.id">
+                <div class="leftSide">
+                    <figure>
+                        <img :src="hobby.src" :alt="hobby.alt">
+                    </figure>
+                </div>
+                <div class="rightSide">
+                    <label class="main">{{hobby.title}}</label>                   
+                    <div class="textNode">{{hobby.desc}}</div>                   
+                </div>
+            </section>
+
+            <!--<section  v-for="hobby in hobby" :key="hobby.id" class="row">
+                <figure class="column1">
+                    <img :src="hobby.src" :alt="hobby.alt">
+                </figure>
+                <section class="column2">
+                    <h2>{{hobby.title}}</h2>
+                    <p>
+                        {{hobby.desc}}
+                    </p>
+                </section>
+            </section>-->
+        </article>
+        <!--<hr />
+    <img :class="dogClass" style="height:150px;width:auto" :src="petImage" @mouseover="updatePet(1)" @mouseleave ="resetPet"/>
+    <div>
+        <img  style="height:150px;width:auto" :src="petImage" />
+    </div>-->
     </main>
     <footer>
     </footer>

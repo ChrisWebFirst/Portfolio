@@ -1013,13 +1013,163 @@ button {
 }
 
 
+/*-----------------------------------------------------Hobbies page*/
+.hobbiesMain {
+    width: 70%;
+    margin-left: 15%;    
+    margin-bottom: 50px;
+}
+.hobby {
+    margin-top: 50px;
+    clear: both;
+    position: relative;
+    display: block;
+    width: 100%;
+    border: 2px solid lightgray;
+    height: 304px;
+    padding: 0px
+}
+
+
+    .hobby .leftSide {
+        width: 20%;
+        display: inline-block;
+        float: left;
+        border-right: 2px solid lightgray;
+        border-right: none;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        overflow: hidden;
+        height: 300px;
+    }
+
+    .hobby .rightSide {
+        width: 80%;
+        display: inline-block;
+        float: left;
+        padding: 25px;
+        background-color: whitesmoke;
+        height: 300px;
+    }
+
+        .hobby .rightSide .main {
+            padding: 0px;
+            margin: 0px;
+            margin-bottom: 15px;
+            font-size: 24px;
+            width: 100%;
+            display: block;
+            clear: both;
+            color: #000046;
+            font-weight: bold;
+            text-transform: Uppercase;
+        }
+
+        .hobby .rightSide .sub {
+            font-size: 20px;
+            margin-top: 10px;
+            width: 100%;
+            display: block;
+            clear: both;
+            font-weight: bold;
+            text-transform: Uppercase;
+        }
+
+        .hobby .rightSide .textNode {
+            font-size: 18px;
+            width: 100%;
+            display: block;
+            clear: both;
+        }
+
+    .hobby figure {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .hobby figure img {
+            width: 100%;
+            height: 300px;
+        }
 
 
 
 
+@media screen and (max-width: 1224px) {
+    .hobby .leftSide {
+        width: 30%;       
+    }
 
+    .hobby .rightSide {
+        width: 70%;       
+    }
+}
+@media screen and (max-width: 992px) {
+    .hobbiesMain {
+        width: 90%;
+        margin-left: 5%;     
+    }
+}
 
+@media screen and (max-width: 768px) {
+    .hobby {        
+        height: 200px;       
+    }
+        .hobby .leftSide {
+            height: 195px;
+            width:20%;
+        }
 
+        .hobby .rightSide {
+            height: 195px;
+            width: 80%;
+        }
+        .hobby figure img {
+            width: 100%;
+            height: 195px;
+        }
+    .hobby .rightSide .main {        
+        font-size: 18px;       
+    }    
 
+    .hobby .rightSide .textNode {
+        font-size: 14px;       
+    }
+}
+@media screen and (max-width: 500px) {
+    .hobby {
+        height:150px;
+    }
+
+        .hobby .leftSide {
+            height: 145px;
+            width: 25%;
+            
+        }
+
+        .hobby .rightSide {
+            height: 145px;
+            width: 75%;
+            padding: 0px;
+            padding-left: 5px
+        }
+
+        .hobby figure img {
+            width: 100%;
+            height: 145px;
+        }
+
+        .hobby .rightSide .main {
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .hobby .rightSide .textNode {
+            font-size: 11px;
+        }
+}
 
 

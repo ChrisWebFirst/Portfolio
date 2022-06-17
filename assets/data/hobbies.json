@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Boating",
+    "src": "assets/images/hobbies/boating.png",
+    "alt": "Family on lake tubing in boat",
+    "desc": "Boating is something we have done a lot while our boys have grown up. Every weekend we would go to the lake and spend the day fishing, swimming, riding and tubing.  Oh, also eat some great food at some of the drive up restaurants."
+  },
+  {
+    "id": 2,
+    "title": "Target Practice",
+    "src": "assets/images/hobbies/shooting.png",
+    "alt": "Aimee and Levi competing in a shooting competition",
+    "desc": "We live in the country and love shooting together.  This can be bow and arrow or rifles.  This is something I grew up doing and continue this with my children.  I also find this is a great time to do something outdoors with the boys to get them out of the house."
+  },
+  {
+    "id": 3,
+    "title": "Fishing",
+    "src": "assets/images/hobbies/fishing.png",
+    "alt": "Two men fishing on the dock",
+    "desc": "Fishing is something I have done since I was a boy.  Its a great time outdoors and gets me on the water.  My youngest son is currently the one who is dying to go fishing every time we can."
+  },
+  {
+    "id": 4,
+    "title": "Hunting",
+    "src": "assets/images/hobbies/deer.png",
+    "alt": "Deer from game camera",
+    "desc": "Hunting is my favorite past time.  It takes my mind off of things and gets me meaningful time with my boys without destractions.  My deer stands are very large.  In fact my whole family of four can campout in one of them.  I find this to be a great way to hang with the family while camping out then get up and make a hunt."
+  },
+  {
+    "id": 5,
+    "title": "Exercise and Fitness",
+    "src": "assets/images/hobbies/exercise.png",
+    "alt": "Random weights from gym",
+    "desc": "I have spent most of my adult life working out three to five times a week.  This is something I picked up in the Army and never put it down.  I use to work out in several of the local gyms but I find now I have to get it in when I can which means I use a home gym. "
+  },
+  {
+    "id": 6,
+    "title": "Family and Friends",
+    "src": "assets/images/hobbies/crawfishboil.png",
+    "alt": "Family eating at a crawfish boil",
+    "desc": "I absolutely love getting together with family and friends.  Grilling, boiling crawfish or just hanging out on the back deck by the pool, I love all of it.  There are a few families we really enjoy spending time with and I can't wait to get them back together with them."
+  }
+]
+
+
+  
