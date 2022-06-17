@@ -774,7 +774,7 @@ a {
             height: 100%;
             left: 0;
             top: 0;
-            background: linear-gradient(to right, #FFFFFF, rgba(#FFFFFF, 0) 80px, rgba(#FFFFFF, 0) calc(100% - 80px), #FFFFFF);
+            /* background: linear-gradient(to right, #FFFFFF, rgba(#FFFFFF, 0) 80px, rgba(#FFFFFF, 0) calc(100% - 80px), #FFFFFF);*/
         }
 
    @keyframes marquee {
