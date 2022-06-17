@@ -44,7 +44,6 @@ const getImg = () => {
     let imgNum;
     let match = false;
     do {
-
         imgNum = Math.floor(Math.random() * 35) + 1;
         if (!images.includes("|" + imgNum + "|")) {
             images += `${imgNum}|`;
@@ -59,26 +58,42 @@ const loadImages = () => {
     let i;
     images = "|";
     for (i = 0; i < 12; i++) {
+        //---create the text node
         let nextImage = getImg();
         let textNode = ImageText[nextImage];
+
+        //---------create image box
         let imgBox = document.createElement("section");
         imgBox.classList.add("imgBox");
+
+        //--------create figurebox
         let figure = document.createElement("figure");
         figure.classList.add("image");
+        //--------create image
         let img = document.createElement("img");
         img.src = `assets/images/about/${nextImage}.JPEG`
+        //------------add the alt description to image
         img.alt = textNode;
+        //--------append image to figure
         figure.appendChild(img);
+        //----------append the figure to the image box
         imgBox.appendChild(figure);
+        //----------add the overlay  
         let overlay = document.createElement("div");
         overlay.classList.add("overlay");
+        //---------add the text div
         let text = document.createElement("div");
         text.classList.add("text");
+        //----------put the text in the text div
         text.innerHTML = textNode;
+        //     append the text div to the overlay
         overlay.appendChild(text);
+        //------append the overlay to the image box
         imgBox.appendChild(overlay);
+
+        //-------append the image box to the container
         container.appendChild(imgBox);
     }
-    setTimeout(loadImages, 20000); // twenty seconds then rerender
+    setTimeout(loadImages, 30000); // thirty seconds then rerender
 }
-loadImages();
+setTimeout(loadImages, 30000); //thirty seconds then rerender
