@@ -17,7 +17,8 @@ This site is written in modern html5, CSS and JavaScript. The only requirement f
 ## NAVIGATION
 
 Navigation of this site is made easy by the links at the top of every page.  If you are on a mobile device press the icon at the top to view a list of all the pages.
-
+- The navigation bar is loaded via javascript so the nav bar isn't dubplicated on every page of the project
+- 
 ## PAGE FEATURES
 
 Home Page
@@ -31,12 +32,19 @@ About Page
 - numerous images from our album with descriptions of each
 - auto reloads different images every 20 seconds
 
+Hobbies Page
+- This is my vue js component
+- The data on the page page pulls from json file
+- It details several hobbies I enjoy
+
+
 Resume Page
 - description of how I started programming
 - list of languages I am most proficient in
 - a detailed description of my work experience along with relevant details for each
 - A list of my prior and current educational achievements along with links to each school
 - A list of languages I have experience in and my thoughts and explanations of each
+- The data in the experience and languages sections pull from an asp.net core api 
 
 About Page
 - photo of family 
@@ -53,6 +61,7 @@ Contact Page
 - This pages is a very clean and simple contact form.
 - I built an API to handle form submission
 - This will allow any user to contact me through the site
+- The contact page send data to a sql database in azure via an asp.net core api
 
 
 
