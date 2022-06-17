@@ -158,10 +158,7 @@ header nav ul li a{
 
 /**----------------------------------footer*/
 
-    /**---------------------Home Page*/
-    .HomeVideo {
-        text-align: center
-    }
+    /**---------------------Home Page*/    
 
     * {
         box-sizing: border-box;
@@ -169,7 +166,8 @@ header nav ul li a{
 
     .home {
         width: 70%;
-        margin-left: 15%
+        margin-left: 15%;
+        margin-top:150px;
     }
 
         .home .row {
@@ -213,20 +211,15 @@ header nav ul li a{
             border-radius: 50%;
             border: 15px solid lightgray;
         }
-
-    .HomeVideo {
-        text-align: center;
-        height: 500px;
-        width: auto;
+    @media screen and (max-width: 1515px) {
+        .home .row .column h2 {
+            font-size: 30px
+        }
     }
 
-        .HomeVideo video {
-            height: auto;
-            width: 800px;
-            max-width: 90%
-        }
-
     @media screen and (max-width: 1440px) {
+       
+
         .home .row .column span {
             font-size: 20px;
             font-weight: bold;
@@ -243,7 +236,11 @@ header nav ul li a{
         }
     }
 
-
+@media screen and (max-width: 1250px) {
+    .home .row .column h2 {
+        font-size: 20px
+    }
+}
 
     @media screen and (max-width: 1100px) {
         .home {
@@ -270,22 +267,29 @@ header nav ul li a{
 
             .home .row .column .addText {
                 padding-top: 15px;
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 300;
             }
     }
 
     @media screen and (max-width: 800px) {
-
+        .home .row .column h2 {
+            font-size: 16px
+        }
+        .home .row .column span {
+            font-size: 14px;
+            margin: 5px
+        }
+        .home .row .column .addText {            
+            font-size: 12px;           
+        }
         .home {
             width: 100%;
             padding: 25px;
+            margin-top: 15px;
         }
 
-        .HomeVideo video {
-            height: auto;
-            width: 90%;
-        }
+      
     }
 
     @media screen and (max-width: 768px) {
@@ -298,30 +302,30 @@ header nav ul li a{
         .home {
             margin: 0px;
             padding: 0px;
-            width:100%
+            width: 100%
         }
 
             .home .row {
-                flex-direction: column;                
+                flex-direction: column;
                 width: 100%;
-                margin:0px;
-                margin-right:0px;
+                margin: 0px;
+                margin-right: 0px;
             }
 
                 .home .row .column img {
                     height: auto;
                     width: 90%;
                 }
-                .home .row .column h2 {
-                   width:100%
-                }
 
+                .home .row .column h2 {
+                    width: 100%
+                }
     }
 
-/**--------------------About Page*/
+    /**--------------------About Page*/
 
     .about {
-        position:relative;
+        position: relative;
         width: 70%;
         margin-left: 15%;
         margin-bottom: 50px;
@@ -388,70 +392,73 @@ header nav ul li a{
         background-color: whitesmoke;
     }
 
-tbody tr:nth-child(even) {
-    background-color: #FFFFFF;
-}
-
-
-#imgsContainer {
-    display: block;
-    margin: auto;
-    text-align: center;    
-}
-
-.imgBox {
-    display: inline-block;
-    float: left;
-    position: relative;
-    width: 250px;
-    height: 350px;
-    margin: 60px 0px 0px 60px;
-    border:3px solid lightgray
-}
-.image {
-    position: relative;
-    display: block;
-    width: 250px;
-    height: 350px; 
-    margin:0px;
-}
-.image img {
-    position:relative;
-    display: block;
-    width: 245px;
-    height: 345px;  
-}
-
-.overlay {
-    position: absolute;
-    width: 245px;
-    height: 345px;
-    top: 0px;
-    left: 0px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #000046;
-}
-
-.imgBox:hover .overlay {
-    opacity: .8;
-}
-
-.text {
-    color: #FFFFFF;
-    font-size: 20px;
-    position: relative;
-    margin-top: 80px;
-    text-align: center;
-    padding: 20px;
-}
-a {
-    color: inherit
-}
-
-    a:hover {
-        cursor: pointer;
+    tbody tr:nth-child(even) {
+        background-color: #FFFFFF;
     }
+
+
+    #imgsContainer {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .imgBox {
+        display: inline-block;
+        float: left;
+        position: relative;
+        width: 250px;
+        height: 350px;
+        margin: 60px 0px 0px 60px;
+        border: 3px solid lightgray
+    }
+
+    .image {
+        position: relative;
+        display: block;
+        width: 250px;
+        height: 350px;
+        margin: 0px;
+    }
+
+        .image img {
+            position: relative;
+            display: block;
+            width: 245px;
+            height: 345px;
+        }
+
+    .overlay {
+        position: absolute;
+        width: 245px;
+        height: 345px;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #000046;
+    }
+
+    .imgBox:hover .overlay {
+        opacity: .8;
+    }
+
+    .text {
+        color: #FFFFFF;
+        font-size: 20px;
+        position: relative;
+        margin-top: 80px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    a {
+        color: inherit
+    }
+
+        a:hover {
+            cursor: pointer;
+        }
 
     @media screen and (max-width: 1100px) {
         .about .row .column1 {
@@ -477,30 +484,34 @@ a {
             margin-left: 5%
         }
     }
-@media screen and (max-width: 740px) {
-    .imgBox {
-        margin: 25px;
+
+    @media screen and (max-width: 740px) {
+        .imgBox {
+            margin: 25px;
+        }
     }
-}
+
     @media screen and (max-width: 600px) {
         .about .row {
             flex-direction: column;
         }
+
         #imgsContainer {
             margin: 0 auto;
-            padding-left:20px;
+            padding-left: 20px;
             width: 100%;
-            text-align:center;
+            text-align: center;
         }
 
         .imgBox {
-           
         }
-        h2{
-            font-size:18px;
+
+        h2 {
+            font-size: 18px;
         }
-        p{
-            font-size:14px;
+
+        p {
+            font-size: 14px;
         }
     }
 
@@ -581,386 +592,271 @@ a {
     }
 
 
-/**---------------Contact Page*/
+    /**---------------Contact Page*/
 
-.MainContact {
-    width: 70%;
-    margin-left: 15%;
-}
-
-.Contact {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-    .Contact .box {
-        position:relative;
-        width: 600px; 
-        height:650px;
-    }
-    .Contact #face {
-        position: absolute;
-        width: 600px;
-        max-width: 100%;
-        border: 2px solid lightgray;
-        border-radius: 10px;
-        background-color: whitesmoke;
-        visibility: visible;
-        opacity: 1;
-        transition: visibility 0.3s linear,opacity 0.3s linear;
-    }
-
-    .Contact #back {
-        position: absolute;
-        text-align: center;
-        width: 600px;
-        max-width: 100%;
-        border: 2px solid lightgray;
-        border-radius: 10px;
-        background-color: whitesmoke;
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0.3s linear,opacity 0.3s linear;
-    }
-    .Contact h3 {
-        font-size: 24px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center
-    }
-
-    .Contact .row {
-        display: flex;
-    }
-
-    .Contact .column {
-        display: flex;
-        flex-direction: column;
-        flex: 50%;
-        padding: 15px;
-    }
-
-    .Contact .full {
-        flex: 100%;
-    }
-
-    .Contact .column label {
-        font-weight: bold;
-    }
-    .Contact .column label span {
-        font-size:10px;
-    }
-    .Contact .column input {
-        height: 35px;
-        border: 1px solid lightgray;
-        width: 100%;
-        border-radius: 6px;
-    }
-
-    .Contact .column textarea {
-        height: 35px;
-        border: 1px solid lightgray;
-        width: 100%;
-        border-radius: 6px;
-        height: 150px;
-    }
-
-@media only screen and (max-width: 620px) {
     .MainContact {
-        width: 100%;
-        margin-left: 0;
-        padding:15px;
+        width: 70%;
+        margin-left: 15%;
     }
 
-    .Contact .box {
-        width: 90%;  
-        height:850px
-    }
-
-    .Contact .column {
-        flex: 100%;
-    }
-
-    .Contact .row {
+    .Contact {
+        align-items: center;
         display: flex;
         flex-direction: column;
-    }
-}
-
-
-/**---------------Resume Page*/
-
-.MainResume {
-    width: 70%;
-    margin-left: 15%;
-}
-
-    .MainResume .row {
-        display: flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
-        .MainResume .row .column1 {
-            flex: 0 0 300px;
-            padding: 20px;
+        .Contact .box {
+            position: relative;
+            width: 600px;
+            height: 650px;
+        }
+
+        .Contact #face {
+            position: absolute;
+            width: 600px;
+            max-width: 100%;
+            border: 2px solid lightgray;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            visibility: visible;
+            opacity: 1;
+            transition: visibility 0.3s linear,opacity 0.3s linear;
+        }
+
+        .Contact #back {
+            position: absolute;
             text-align: center;
+            width: 600px;
+            max-width: 100%;
+            border: 2px solid lightgray;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0.3s linear,opacity 0.3s linear;
         }
 
-        .MainResume .row .column2 {
-            flex: 1;
-            padding: 20px;
-            text-align: left;
+        .Contact h3 {
+            font-size: 24px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center
         }
 
+        .Contact .row {
+            display: flex;
+        }
 
+        .Contact .column {
+            display: flex;
+            flex-direction: column;
+            flex: 50%;
+            padding: 15px;
+        }
 
-            .MainResume .row .column2 p {
-                font-size: 20px;
-                line-height: 1.5;
-                padding-top: 50px
+        .Contact .full {
+            flex: 100%;
+        }
+
+        .Contact .column label {
+            font-weight: bold;
+        }
+
+            .Contact .column label span {
+                font-size: 10px;
             }
 
-        .MainResume .row .column1 img {
-            height: auto;
-            width: 250px;
-            max-width: 90%;
-            border-radius: 50%;
-        }
-
-    .MainResume .paddTop100 {
-        padding-top: 100px;
-    }
-
-    .MainResume .MainRow button {
-        width: 150px;
-        float: right
-    }
-
-
-.lang-slider {
-    padding: 20px;
-    overflow: hidden;
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-}
-
-    .lang-slider:hover div {
-        animation-play-state: paused;
-    }
-
-    .lang-slider div {
-        display: flex;
-        position: relative;
-        animation: marquee 15s linear infinite;
-        justify-content: space-around;
-    }
-
-    .lang-slider .logoimg {
-        display: block;
-        min-width: 150px;
-        height: 150px;
-        margin: 0 10px;
-    }
-
-        .lang-slider .logoimg:after {
-            content: "";
-            position: absolute;
+        .Contact .column input {
+            height: 35px;
+            border: 1px solid lightgray;
             width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-            /* background: linear-gradient(to right, #FFFFFF, rgba(#FFFFFF, 0) 80px, rgba(#FFFFFF, 0) calc(100% - 80px), #FFFFFF);*/
+            border-radius: 6px;
         }
 
-   @keyframes marquee {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-650%);
-    }
-}
-
-button {
-    background-color: rgba(17,17,67,.8);
-    color: #FFFFFF;
-    height: 35px;
-    border-radius: 6px;
-    font-weight: 400;
-    font-size: 18px
-}
-
-    button:hover {
-        background-color: #FFFFFF;
-        color: rgba(17,17,67,.8);
-        border-color: rgba(17,17,67,.8);
-    }
-
-
-#Education section {
-    margin-top: 50px;
-    clear: both;
-    display: block;
-    width: 100%;
-    border: 2px solid lightgray;
-    height: 252px;
-    padding: 0px
-}
-
-    #Education section:hover {
-        border: 4px solid #000046;
-        height: 258px;
-    }
-
-    #Education section .leftSide {
-        width: 20%;
-        display: inline-block;
-        float: left;
-        border-right: 2px solid lightgray;
-        height: 250px;
-        padding: 0px;
-        text-align: center
-    }
-
-    #Education section .rightSide {
-        width: 80%;
-        display: inline-block;
-        float: left;
-        padding: 25px;
-        background-color: whitesmoke;
-        height: 248px
-    }
-
-        #Education section .rightSide .main {
-            padding: 0px;
-            margin: 0px;
-            margin-bottom: 15px;
-            font-size: 24px;
+        .Contact .column textarea {
+            height: 35px;
+            border: 1px solid lightgray;
             width: 100%;
-            display: block;
-            clear: both;
-            color: #000046;
-            font-weight: bold;
-            text-transform: Uppercase;
+            border-radius: 6px;
+            height: 150px;
         }
 
-        #Education section .rightSide .sub {
-            font-size: 20px;
-            margin-top: 10px;
+    @media only screen and (max-width: 620px) {
+        .MainContact {
             width: 100%;
-            display: block;
-            clear: both;
-            font-weight: bold;
-            text-transform: Uppercase;
+            margin-left: 0;
+            padding: 15px;
         }
 
-        #Education section .rightSide .textNode {
-            font-size: 18px;
-            width: 100%;
-            display: block;
-            clear: both;
+        .Contact .box {
+            width: 90%;
+            height: 850px
         }
 
-    #Education section figure img {
-        width: auto;
-        height: 200px
+        .Contact .column {
+            flex: 100%;
+        }
+
+        .Contact .row {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
-@media screen and (max-width: 821px) {
+
+    /**---------------Resume Page*/
+
     .MainResume {
-        width: 90%;
-        margin: 0px;
-        padding:15px;
-    }
-    .MainResume .row .column1 {
-        display: block;
-        width: 100%;
-        padding: 0px;
-        margin:0px;
-        text-align: center;
+        width: 70%;
+        margin-left: 15%;
     }
 
-    .MainResume .row .column2 {
-       display:block;
-       width:100%;
-        padding: 20px;
-        text-align: left;
-    }
-
-
-
-        .MainResume .row .column2 p {
-            font-size: 15px;
-            line-height: 1.2;            
-            padding-top: 50px;
-            text-align:center;
+        .MainResume .row {
+            display: flex;
+            flex-wrap: wrap;
         }
 
-    .MainResume .row .column1 img {
-        height: auto;
-        width: 80%;
-        margin-left:10%;        
-        border-radius: 50%;
-    }
+            .MainResume .row .column1 {
+                flex: 0 0 300px;
+                padding: 20px;
+                text-align: center;
+            }
 
-    
-    
-    #Education section .leftSide {
-        width: 30%;
-    }
+            .MainResume .row .column2 {
+                flex: 1;
+                padding: 20px;
+                text-align: left;
+            }
 
-    #Education section .rightSide {
-        width: 70%;
-        display: inline-block;
-        float: left;
-        padding: 25px;
-        background-color: whitesmoke;
-        height: 248px
-    }
 
-    #Education section figure img {
-        margin-top: 50px;
+
+                .MainResume .row .column2 p {
+                    font-size: 20px;
+                    line-height: 1.5;
+                    padding-top: 50px
+                }
+
+            .MainResume .row .column1 img {
+                height: auto;
+                width: 250px;
+                max-width: 90%;
+                border-radius: 50%;
+            }
+
+        .MainResume .paddTop100 {
+            padding-top: 100px;
+        }
+
+        .MainResume .MainRow button {
+            width: 150px;
+            float: right
+        }
+
+
+    .lang-slider {
+        padding: 20px;
+        overflow: hidden;
+        max-width: 100%;
         width: 100%;
-        height: auto
+        margin: 0 auto;
+        position: relative;
+        display: flex;
     }
-}
 
-@media screen and (max-width: 600px) {
+        .lang-slider:hover div {
+            animation-play-state: paused;
+        }
+
+        .lang-slider div {
+            display: flex;
+            position: relative;
+            animation: marquee 15s linear infinite;
+            justify-content: space-around;
+        }
+
+        .lang-slider .logoimg {
+            display: block;
+            min-width: 150px;
+            height: 150px;
+            margin: 0 10px;
+        }
+
+            .lang-slider .logoimg:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                /* background: linear-gradient(to right, #FFFFFF, rgba(#FFFFFF, 0) 80px, rgba(#FFFFFF, 0) calc(100% - 80px), #FFFFFF);*/
+            }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-650%);
+        }
+    }
+
+    button {
+        background-color: rgba(17,17,67,.8);
+        color: #FFFFFF;
+        height: 35px;
+        border-radius: 6px;
+        font-weight: 400;
+        font-size: 18px
+    }
+
+        button:hover {
+            background-color: #FFFFFF;
+            color: rgba(17,17,67,.8);
+            border-color: rgba(17,17,67,.8);
+        }
+
+
     #Education section {
         margin-top: 50px;
         clear: both;
         display: block;
         width: 100%;
         border: 2px solid lightgray;
-        height: 125px;
+        height: 252px;
         padding: 0px
     }
 
         #Education section:hover {
             border: 4px solid #000046;
-            height: 130px;
+            height: 258px;
         }
 
-
+        #Education section .leftSide {
+            width: 20%;
+            display: inline-block;
+            float: left;
+            border-right: 2px solid lightgray;
+            height: 250px;
+            padding: 0px;
+            text-align: center
+        }
 
         #Education section .rightSide {
             width: 80%;
-            padding: 0px;
+            display: inline-block;
+            float: left;
+            padding: 25px;
             background-color: whitesmoke;
-            height: 120px;
-            padding-left: 15px
+            height: 248px
         }
 
             #Education section .rightSide .main {
                 padding: 0px;
-                margin: 0px;                
-                font-size: 12px;
+                margin: 0px;
+                margin-bottom: 15px;
+                font-size: 24px;
                 width: 100%;
                 display: block;
                 clear: both;
@@ -970,7 +866,8 @@ button {
             }
 
             #Education section .rightSide .sub {
-                font-size: 11px;
+                font-size: 20px;
+                margin-top: 10px;
                 width: 100%;
                 display: block;
                 clear: both;
@@ -979,197 +876,321 @@ button {
             }
 
             #Education section .rightSide .textNode {
-                font-size: 11px;
+                font-size: 18px;
                 width: 100%;
                 display: block;
                 clear: both;
             }
 
+        #Education section figure img {
+            width: auto;
+            height: 200px
+        }
+
+    @media screen and (max-width: 821px) {
+        .MainResume {
+            width: 90%;
+            margin: 0px;
+            padding: 15px;
+        }
+
+            .MainResume .row .column1 {
+                display: block;
+                width: 100%;
+                padding: 0px;
+                margin: 0px;
+                text-align: center;
+            }
+
+            .MainResume .row .column2 {
+                display: block;
+                width: 100%;
+                padding: 20px;
+                text-align: left;
+            }
+
+
+
+                .MainResume .row .column2 p {
+                    font-size: 15px;
+                    line-height: 1.2;
+                    padding-top: 50px;
+                    text-align: center;
+                }
+
+            .MainResume .row .column1 img {
+                height: auto;
+                width: 80%;
+                margin-left: 10%;
+                border-radius: 50%;
+            }
+
+
+
         #Education section .leftSide {
+            width: 30%;
+        }
+
+        #Education section .rightSide {
+            width: 70%;
+            display: inline-block;
+            float: left;
+            padding: 25px;
+            background-color: whitesmoke;
+            height: 248px
+        }
+
+        #Education section figure img {
+            margin-top: 50px;
+            width: 100%;
+            height: auto
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #Education section {
+            margin-top: 50px;
+            clear: both;
+            display: block;
+            width: 100%;
+            border: 2px solid lightgray;
+            height: 125px;
+            padding: 0px
+        }
+
+            #Education section:hover {
+                border: 4px solid #000046;
+                height: 130px;
+            }
+
+
+
+            #Education section .rightSide {
+                width: 80%;
+                padding: 0px;
+                background-color: whitesmoke;
+                height: 120px;
+                padding-left: 15px
+            }
+
+                #Education section .rightSide .main {
+                    padding: 0px;
+                    margin: 0px;
+                    font-size: 12px;
+                    width: 100%;
+                    display: block;
+                    clear: both;
+                    color: #000046;
+                    font-weight: bold;
+                    text-transform: Uppercase;
+                }
+
+                #Education section .rightSide .sub {
+                    font-size: 11px;
+                    width: 100%;
+                    display: block;
+                    clear: both;
+                    font-weight: bold;
+                    text-transform: Uppercase;
+                }
+
+                #Education section .rightSide .textNode {
+                    font-size: 11px;
+                    width: 100%;
+                    display: block;
+                    clear: both;
+                }
+
+            #Education section .leftSide {
+                width: 20%;
+                display: inline-block;
+                float: left;
+                border-right: 2px solid lightgray;
+                height: 120px;
+                padding: 0px;
+                text-align: center
+            }
+
+            #Education section figure {
+                width: 100%;
+                height: 100px;
+                display: block;
+                position: relative;
+                margin: 0px;
+                margin-top: 25px;
+                padding: 0px;
+            }
+
+                #Education section figure img {
+                    margin-top: 0px;
+                    width: 50px;
+                    height: auto
+                }
+    }
+
+
+    /*-----------------------------------------------------Hobbies page*/
+    .hobbiesMain {
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 50px;
+    }
+
+    .hobby {
+        margin-top: 50px;
+        clear: both;
+        position: relative;
+        display: block;
+        width: 100%;
+        border: 2px solid lightgray;
+        height: 304px;
+        padding: 0px
+    }
+
+
+        .hobby .leftSide {
             width: 20%;
             display: inline-block;
             float: left;
             border-right: 2px solid lightgray;
-            height: 120px;
-            padding: 0px;
-            text-align: center
-        }
-
-        #Education section figure {
-            width: 100%;
-            height: 100px;
-            display: block;
-            position: relative;
-            margin: 0px;
-            margin-top: 25px;
-            padding: 0px;
-        }
-
-            #Education section figure img {
-                margin-top: 0px;
-                width: 50px;
-                height: auto
-            }
-}
-
-
-/*-----------------------------------------------------Hobbies page*/
-.hobbiesMain {
-    width: 70%;
-    margin-left: 15%;    
-    margin-bottom: 50px;
-}
-.hobby {
-    margin-top: 50px;
-    clear: both;
-    position: relative;
-    display: block;
-    width: 100%;
-    border: 2px solid lightgray;
-    height: 304px;
-    padding: 0px
-}
-
-
-    .hobby .leftSide {
-        width: 20%;
-        display: inline-block;
-        float: left;
-        border-right: 2px solid lightgray;
-        border-right: none;
-        padding: 0px;
-        margin: 0px;
-        text-align: center;
-        overflow: hidden;
-        height: 300px;
-    }
-
-    .hobby .rightSide {
-        width: 80%;
-        display: inline-block;
-        float: left;
-        padding: 25px;
-        background-color: whitesmoke;
-        height: 300px;
-    }
-
-        .hobby .rightSide .main {
+            border-right: none;
             padding: 0px;
             margin: 0px;
-            margin-bottom: 15px;
-            font-size: 24px;
-            width: 100%;
-            display: block;
-            clear: both;
-            color: #000046;
-            font-weight: bold;
-            text-transform: Uppercase;
-        }
-
-        .hobby .rightSide .sub {
-            font-size: 20px;
-            margin-top: 10px;
-            width: 100%;
-            display: block;
-            clear: both;
-            font-weight: bold;
-            text-transform: Uppercase;
-        }
-
-        .hobby .rightSide .textNode {
-            font-size: 18px;
-            width: 100%;
-            display: block;
-            clear: both;
-        }
-
-    .hobby figure {
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-    }
-
-        .hobby figure img {
-            width: 100%;
+            text-align: center;
+            overflow: hidden;
             height: 300px;
         }
 
-
-
-
-@media screen and (max-width: 1224px) {
-    .hobby .leftSide {
-        width: 30%;       
-    }
-
-    .hobby .rightSide {
-        width: 70%;       
-    }
-}
-@media screen and (max-width: 992px) {
-    .hobbiesMain {
-        width: 90%;
-        margin-left: 5%;     
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .hobby {        
-        height: 200px;       
-    }
-        .hobby .leftSide {
-            height: 195px;
-            width:20%;
-        }
-
         .hobby .rightSide {
-            height: 195px;
             width: 80%;
+            display: inline-block;
+            float: left;
+            padding: 25px;
+            background-color: whitesmoke;
+            height: 300px;
         }
-        .hobby figure img {
+
+            .hobby .rightSide .main {
+                padding: 0px;
+                margin: 0px;
+                margin-bottom: 15px;
+                font-size: 24px;
+                width: 100%;
+                display: block;
+                clear: both;
+                color: #000046;
+                font-weight: bold;
+                text-transform: Uppercase;
+            }
+
+            .hobby .rightSide .sub {
+                font-size: 20px;
+                margin-top: 10px;
+                width: 100%;
+                display: block;
+                clear: both;
+                font-weight: bold;
+                text-transform: Uppercase;
+            }
+
+            .hobby .rightSide .textNode {
+                font-size: 18px;
+                width: 100%;
+                display: block;
+                clear: both;
+            }
+
+        .hobby figure {
             width: 100%;
-            height: 195px;
+            padding: 0px;
+            margin: 0px;
         }
-    .hobby .rightSide .main {        
-        font-size: 18px;       
-    }    
 
-    .hobby .rightSide .textNode {
-        font-size: 14px;       
-    }
-}
-@media screen and (max-width: 500px) {
-    .hobby {
-        height:150px;
-    }
+            .hobby figure img {
+                width: 100%;
+                height: 300px;
+            }
 
+
+
+
+    @media screen and (max-width: 1224px) {
         .hobby .leftSide {
-            height: 145px;
-            width: 25%;
-            
+            width: 30%;
         }
 
         .hobby .rightSide {
-            height: 145px;
-            width: 75%;
-            padding: 0px;
-            padding-left: 5px
+            width: 70%;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .hobbiesMain {
+            width: 90%;
+            margin-left: 5%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .hobby {
+            height: 200px;
         }
 
-        .hobby figure img {
-            width: 100%;
-            height: 145px;
+            .hobby .leftSide {
+                height: 195px;
+                width: 20%;
+            }
+
+            .hobby .rightSide {
+                height: 195px;
+                width: 80%;
+            }
+
+            .hobby figure img {
+                width: 100%;
+                height: 195px;
+            }
+
+            .hobby .rightSide .main {
+                font-size: 18px;
+            }
+
+            .hobby .rightSide .textNode {
+                font-size: 14px;
+            }
+    }
+
+    @media screen and (max-width: 500px) {
+        .hobby {
+            height: 150px;
         }
 
-        .hobby .rightSide .main {
-            font-size: 16px;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+            .hobby .leftSide {
+                height: 145px;
+                width: 25%;
+            }
 
-        .hobby .rightSide .textNode {
-            font-size: 11px;
-        }
-}
+            .hobby .rightSide {
+                height: 145px;
+                width: 75%;
+                padding: 0px;
+                padding-left: 5px
+            }
+
+            .hobby figure img {
+                width: 100%;
+                height: 145px;
+            }
+
+            .hobby .rightSide .main {
+                font-size: 16px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .hobby .rightSide .textNode {
+                font-size: 11px;
+            }
+    }
 
 
