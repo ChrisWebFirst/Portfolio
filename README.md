@@ -17,7 +17,7 @@ This site is written in modern html5, CSS and JavaScript. The only requirement f
 ## NAVIGATION
 
 Navigation of this site is made easy by the links at the top of every page.  If you are on a mobile device press the icon at the top to view a list of all the pages.
-- The navigation bar is loaded via javascript so the nav bar isn't dubplicated on every page of the project
+- The navigation bar is loaded via javascript so the nav bar isn't dubplicated on every page of the project.
 - 
 ## PAGE FEATURES
 
